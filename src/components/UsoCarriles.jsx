@@ -2,7 +2,7 @@
 
 function UsoCarriles() {
   return (
-    <div>Uso Carriles</div>
+    <div className="select-none">Uso Carriles</div>
   )
 }
 
