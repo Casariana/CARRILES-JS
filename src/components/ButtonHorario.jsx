@@ -29,7 +29,7 @@ function ButtonHorario() {
   
   return (
     <>
-    <h2>Selecciona la hora</h2>
+    <h2 className="mb-4 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-4xl">Selecciona la hora</h2>
     <div className="flex flex-wrap gap-2 max-w-xl mt-5 justify-center">
       {horario.map((hora, index) => (
         <label
