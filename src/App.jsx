@@ -5,8 +5,9 @@ import Filtros from './components/Filtros'
 import UsoCarriles from './components/UsoCarriles'
 import PlantillaPiscina from './components/PlantillaPiscina'
 import Footer from './components/Footer'
+import Desplegable from './components/Desplegable'
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -14,9 +15,8 @@ function App() {
     <Filtros />
     <UsoCarriles />
     <PlantillaPiscina />
+    <Desplegable />
     <Footer />
     </>
   )
 }
-
-export default App
