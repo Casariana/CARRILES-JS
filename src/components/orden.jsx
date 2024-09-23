@@ -1,5 +1,11 @@
 // Acá el orden del main hasta que escriba los routes;}
 
-<Filtros />
-    <UsoCarriles />
-    <PlantillaPiscina />
+import React from 'react'
+
+function orden() {
+  return (
+    <div>orden</div>
+  )
+}
+
+export default orden
