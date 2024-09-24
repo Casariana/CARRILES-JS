@@ -1,16 +1,19 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <header className="flex justify-between border-b border-gray-400 ">
       <div className="flex items-center justify-between py-8 ">
-        <h1 className="mb-4 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-6xl select-none">
-          Complejo Acuático <br />
-          Uso del espacio
-        </h1>
-        </div>
-        <div className="flex items-center">
+        <Link to="/">
+          <h1 className="mb-4 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-6xl select-none">
+            Complejo Acuático <br />
+            Uso del espacio
+          </h1>
+        </Link>
+      </div>
+      <div className="flex items-center">
         <nav>
           <section className="MOBILE-MENU flex lg:hidden">
             <div
@@ -41,14 +44,29 @@ function Header() {
                 </svg>
               </div>
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/about">Organismos</a>
+                <li>
+                  <Link
+                    className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                    to="/organismos"
+                  >
+                    Organismos
+                  </Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/portfolio">Control</a>
+                <li>
+                  <Link
+                    className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                    to="/dashboard"
+                  >
+                    Dashboard
+                  </Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/contact">Login</a>
+                <li>
+                  <Link
+                    className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                    to="/login"
+                  >
+                    Login
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -56,13 +74,28 @@ function Header() {
 
           <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
             <li>
-              <a className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none" href="/about">Organismos</a>
+              <Link
+                className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                to="/organismos"
+              >
+                Organismos
+              </Link>
             </li>
             <li>
-              <a className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none" href="/portfolio">Control</a>
+              <Link
+                className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                to="/dashboard"
+              >
+                Dashboard
+              </Link>
             </li>
             <li>
-              <a className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none" href="/contact">Login</a>
+              <Link
+                className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                to="/login"
+              >
+                Login
+              </Link>
             </li>
           </ul>
         </nav>
