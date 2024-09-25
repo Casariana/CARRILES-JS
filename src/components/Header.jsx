@@ -47,7 +47,7 @@ function Header() {
                 <li>
                   <Link
                     className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                    to="/organismos"
+                    to="/organismos" onClick={() => setIsNavOpen(false)}
                   >
                     Organismos
                   </Link>
@@ -56,6 +56,7 @@ function Header() {
                   <Link
                     className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
                     to="/dashboard"
+                    onClick={() => setIsNavOpen(false)}
                   >
                     Dashboard
                   </Link>
@@ -63,7 +64,7 @@ function Header() {
                 <li>
                   <Link
                     className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                    to="/login"
+                    to="/login" onClick={() => setIsNavOpen(false)}
                   >
                     Login
                   </Link>
@@ -76,7 +77,7 @@ function Header() {
             <li>
               <Link
                 className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                to="/organismos"
+                to="/organismos" 
               >
                 Organismos
               </Link>
@@ -84,7 +85,7 @@ function Header() {
             <li>
               <Link
                 className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                to="/dashboard"
+                to="/dashboard" 
               >
                 Dashboard
               </Link>
@@ -92,7 +93,7 @@ function Header() {
             <li>
               <Link
                 className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                to="/login"
+                to="/login" 
               >
                 Login
               </Link>
