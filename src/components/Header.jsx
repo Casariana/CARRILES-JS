@@ -44,6 +44,14 @@ function Header() {
                 </svg>
               </div>
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <li>
+                  <Link
+                    className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
+                    to="/" onClick={() => setIsNavOpen(false)}
+                  >
+                    Inicio
+                  </Link>
+                </li>
                 <li>
                   <Link
                     className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
