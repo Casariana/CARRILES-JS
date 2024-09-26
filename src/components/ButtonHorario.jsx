@@ -19,7 +19,7 @@ function ButtonHorario() {
     "18:00",
     "19:00",
     "20:00",
-    "21:00",
+    "21:00"
   ];
   const handleChange = (event) => {
     setSelectedHora(event.target.value);
@@ -33,7 +33,9 @@ function ButtonHorario() {
     <div className="flex flex-wrap gap-2 max-w-xl mt-5 justify-center">
       {horario.map((hora, index) => (
         <label
-          className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer focus:accent-slate-950 w-20 select-none"
+          className={`${
+            selectedHora === hora ? "outline outline-4 outline-teal-700" : ""
+          } text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer focus:accent-slate-950 w-20 select-none`}
           key={index}
         >
           <input

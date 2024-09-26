@@ -1,8 +1,9 @@
-import React from 'react'
+import DisplayCarriles from "./DisplayCarriles";
 
-function PlantillaPiscina() {
+export default function PlantillaPiscina() {
   return (
-    <div className='mt-10 flex justify-center'>
+    <div className='mt-10 flex justify-center '>
+        <DisplayCarriles />
         <img 
         className='max-w-3xl'
         src="../public/piscina25x50.jpg" 
@@ -10,5 +11,3 @@ function PlantillaPiscina() {
     </div>
   )
 }
-
-export default PlantillaPiscina
