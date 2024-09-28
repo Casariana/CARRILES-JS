@@ -1,20 +1,19 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Organismos from "./components/Organismos";
-import DashBoard from "./components/Dashboard";
-import Login from "./components/Login";
+
+import Home from "./components/main/Home";
+import Organismos from "./components/organismos/Organismos";
+import Control from "./components/control/Control";
+import Login from "./components/login/Login";
 import ErrorPage from "./components/ErrorPage";
 import "./App.css";
 
 export default function App() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/organismos" element={<Organismos />} />
-        <Route path="/dashboard" element={<DashBoard />} />
+        <Route path="/control" element={<Control />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

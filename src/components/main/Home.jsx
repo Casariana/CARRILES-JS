@@ -1,15 +1,14 @@
-import UsoCarriles from "./UsoCarriles"
+
 import Filtros from "./Filtros";
 import PlantillaPiscina from "./PlantillaPiscina";
-import Footer from "./Footer";
-
+import Footer from "../Footer";
+import Header from "../Header";
 
 export default function Home() {
   return (
     <>
-      
-      <Filtros />
-      <UsoCarriles />
+      <Header />
+      <Filtros />      
       <PlantillaPiscina />
       <Footer />
     </>

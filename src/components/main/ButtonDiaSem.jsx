@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 let seleccionado = "";
-function ButtonDiaSem() {
+export default function ButtonDiaSem() {
   const [selectedDia, setSelectedDia] = useState("");
   const diaSem = [
     "Lunes",
@@ -43,5 +43,3 @@ function ButtonDiaSem() {
     </>
   );
 }
-
-export default ButtonDiaSem;

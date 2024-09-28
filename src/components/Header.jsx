@@ -63,10 +63,10 @@ function Header() {
                 <li>
                   <Link
                     className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                    to="/dashboard"
+                    to="/control"
                     onClick={() => setIsNavOpen(false)}
                   >
-                    Dashboard
+                    Control
                   </Link>
                 </li>
                 <li>
@@ -93,9 +93,9 @@ function Header() {
             <li>
               <Link
                 className="mb-4 font-extrabold text-transparent bg-clip-text hover:text-teal-200 bg-gradient-to-r to-emerald-600 from-sky-400 md:text-md lg:text-lg select-none"
-                to="/dashboard" 
+                to="/control" 
               >
-                Dashboard
+                Control
               </Link>
             </li>
             <li>
