@@ -1,73 +1,63 @@
+import ControlFormOrganismos from "./ControlFormOrganismos";
 
+export default function ControlOrganismo() {
+  const datosOrganismos = [
+    {
+      organismo: "liga antioqueña de actividades subacuáticas",
+      sigla: "liga antioqueña de actividades subacuáticas",
+      programa: "liga antioqueña de actividades subacuáticas",
+      modalidad: "liga antioqueña de actividades subacuáticas",
+      formador: "liga antioqueña de actividades subacuáticas",
+    },
+  ];
 
-function ControlOrganismo() {
-    const datosOrganismos = [
-        {
-          piscina: "Subacuatica",
-          dia: "Lunes",
-          horaInicio: "05:00",
-          horaFin: "06:00",
-        },
-        {
-          piscina: "Subacuatica",
-          dia: "Lunes",
-          horaInicio: "07:00",
-          horaFin: "08:00",
-        },
-        {
-          piscina: "Subacuatica",
-          dia: "Lunes",
-          horaInicio: "05:00",
-          horaFin: "06:00",
-        },
-        {
-          piscina: "Subacuatica",
-          dia: "Lunes",
-          horaInicio: "05:00",
-          horaFin: "06:00",
-        },
-        {
-          piscina: "Subacuatica",
-          dia: "Lunes",
-          horaInicio: "05:00",
-          horaFin: "06:00",
-        },
-        {
-          piscina: "Subacuatica",
-          dia: "Lunes",
-          horaInicio: "05:00",
-          horaFin: "06:00",
-        },
-      ];
   return (
     <>
-    <section>
-        <div className="flex items-center justify-center mt-16 min-h-80">
+      <ControlFormOrganismos />
+      <section>
+        <div className="flex items-center justify-center mt-4 min-h-30">
           <table className="border-spacing-y-3 text-gray-400 border-separate space-y-6 text-sm ">
             <thead className="bg-teal-100 text-gray-600 ">
               <tr>
-                <th className="px-5 py-3 font-extrabold  uppercase">piscina</th>
-                <th className="px-5 py-3 font-extrabold  text-left uppercase">
-                  dia
+                <th className="px-5 py-3 font-extrabold  uppercase">
+                  Organismo
                 </th>
                 <th className="px-5 py-3 font-extrabold  text-left uppercase">
-                  hora inicio
+                  Sigla
                 </th>
                 <th className="px-5 py-3 font-extrabold  text-left uppercase">
-                  hora fin
+                  Programa
+                </th>
+                <th className="px-5 py-3 font-extrabold  text-left uppercase">
+                  Modalidad
+                </th>
+                <th className="px-5 py-3 font-extrabold  text-left uppercase">
+                  Formador
+                </th>
+                <th className="px-5 py-3 font-extrabold  text-left uppercase">
+                  Acciones
                 </th>
               </tr>
             </thead>
             <tbody>
               {datosOrganismos.map((dato, index) => (
                 <tr key={index} className="bg-teal-100 rounded-lg">
-                  <td className="p-4 ">{dato.piscina}</td>
-                  <td className="p-4">{dato.dia}</td>
-                  <td className="p-4 ">{dato.horaInicio}</td>
-                  <td className="p-4">
-                    <span className="bg-green-400 text-gray-50 rounded-md px-2">
-                      {dato.horaFin}
-                    </span>
+                  <td className="p-4 uppercase max-w-60">{dato.organismo}</td>
+                  <td className="p-4 uppercase max-w-60">{dato.sigla}</td>
+                  <td className="p-4 uppercase max-w-60">{dato.programa}</td>
+                  <td className="p-4 uppercase max-w-60">{dato.modalidad}</td>
+                  <td className="p-4 uppercase max-w-60">{dato.formador}</td>
+                  <td className="p-4 flex">
+                    <img
+                      className="w-12 h-12"
+                      src="../../../public/update.png"
+                      alt="update"
+                    />
+                    <img
+                      className="w-12 h-12"
+                      src="../../../public/delete.png"
+                      alt="delete"
+                    />
                   </td>
                 </tr>
               ))}
@@ -76,7 +66,5 @@ function ControlOrganismo() {
         </div>
       </section>
     </>
-  )
+  );
 }
-
-export default ControlOrganismo
