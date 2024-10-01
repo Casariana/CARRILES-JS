@@ -1,4 +1,4 @@
-import React from "react";
+  
 
 export default function ModalOrganismos({ onClose }) {
   return (
@@ -63,7 +63,7 @@ export default function ModalOrganismos({ onClose }) {
             type="submit" 
             className="mt-4 bg-teal-500 text-white rounded-lg px-4 py-2">
 
-            Enviar
+            Agregar
           </button>
           </form>
         </div>
