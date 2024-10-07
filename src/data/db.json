@@ -1,286 +1,140 @@
 {
   "piscinas": [
-    {
-      "id": 1,
-      "nombre": "Clavados",
-      "carriles": ["1", "2", "3", "4", "5", "6", "7", "8"]
-    },
-    {
-      "id": 2,
-      "nombre": "Enseñanza 1",
-      "carriles": ["1"]
-    },
-    {
-      "id": 3,
-      "nombre": "Enseñanza 2",
-      "carriles": ["1", "2", "3", "4", "5", "6"]
-    },
-    {
-      "id": 4,
-      "nombre": "Escuela 1",
-      "carriles": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-    },
-    {
-      "id": 5,
-      "nombre": "Escuela 2",
-      "carriles": ["1", "2", "3", "4", "5", "6"]
-    },
-    {
-      "id": 6,
-      "nombre": "Infantil 1",
-      "carriles": ["1", "2"]
-    },
-    {
-      "id": 7,
-      "nombre": "Infantil 2",
-      "carriles": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-    },
-    {
-      "id": 8,
-      "nombre": "Infantil 3",
-      "carriles": ["1"]
-    },
-    {
-      "id": 9,
-      "nombre": "Infantil 4",
-      "carriles": ["1", "2"]
-    },
-    {
-      "id": 10,
-      "nombre": "Nado",
-      "carriles": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12"
-      ]
-    },
-    {
-      "id": 11,
-      "nombre": "Olímpica",
-      "carriles": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-    },
-    {
-      "id": 12,
-      "nombre": "Subacuática",
-      "carriles": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-    }
+    { "id": 1, "piscina": "Clavados" },
+    { "id": 2, "piscina": "Enseñanza 1" },
+    { "id": 3, "piscina": "Enseñanza 2" },
+    { "id": 4, "piscina": "Escuela 1" },
+    { "id": 5, "piscina": "Escuela 2" },
+    { "id": 6, "piscina": "Infantil 1" },
+    { "id": 7, "piscina": "Infantil 2" },
+    { "id": 8, "piscina": "Infantil 3" },
+    { "id": 9, "piscina": "Infantil 4" },
+    { "id": 10, "piscina": "Nado" },
+    { "id": 11, "piscina": "Olímpica" },
+    { "id": 12, "piscina": "Subacuática" }
   ],
-  "organismos_deportivos": [
-    {
-      "id": 1,
-      "nombre": "sin asignar",
-      "contacto": ""
-    },
-    {
-      "id": 2,
-      "nombre": "",
-      "contacto": ""
-    }
+  "carriles": [
+    { "id": 1, "id_piscina": 1, "carril": 1 },
+    { "id": 2, "id_piscina": 1, "carril": 2 },
+    { "id": 3, "id_piscina": 1, "carril": 3 },
+    { "id": 4, "id_piscina": 1, "carril": 4 },
+    { "id": 5, "id_piscina": 1, "carril": 5 },
+    { "id": 6, "id_piscina": 1, "carril": 6 },
+    { "id": 7, "id_piscina": 1, "carril": 7 },
+    { "id": 8, "id_piscina": 1, "carril": 8 },
+    { "id": 9, "id_piscina": 2, "carril": 1 },
+    { "id": 10, "id_piscina": 3, "carril": 1 },
+    { "id": 11, "id_piscina": 3, "carril": 2 },
+    { "id": 12, "id_piscina": 3, "carril": 3 },
+    { "id": 13, "id_piscina": 3, "carril": 4 },
+    { "id": 14, "id_piscina": 3, "carril": 5 },
+    { "id": 15, "id_piscina": 3, "carril": 6 },
+    { "id": 16, "id_piscina": 4, "carril": 1 },
+    { "id": 17, "id_piscina": 4, "carril": 2 },
+    { "id": 18, "id_piscina": 4, "carril": 3 },
+    { "id": 19, "id_piscina": 4, "carril": 4 },
+    { "id": 20, "id_piscina": 4, "carril": 5 },
+    { "id": 21, "id_piscina": 4, "carril": 6 },
+    { "id": 22, "id_piscina": 4, "carril": 7 },
+    { "id": 23, "id_piscina": 4, "carril": 8 },
+    { "id": 24, "id_piscina": 4, "carril": 9 },
+    { "id": 25, "id_piscina": 4, "carril": 10 },
+    { "id": 26, "id_piscina": 5, "carril": 1 },
+    { "id": 27, "id_piscina": 5, "carril": 2 },
+    { "id": 28, "id_piscina": 5, "carril": 3 },
+    { "id": 29, "id_piscina": 5, "carril": 4 },
+    { "id": 30, "id_piscina": 5, "carril": 5 },
+    { "id": 31, "id_piscina": 5, "carril": 6 },
+    { "id": 32, "id_piscina": 6, "carril": 1 },
+    { "id": 33, "id_piscina": 6, "carril": 2 },
+    { "id": 34, "id_piscina": 7, "carril": 1 },
+    { "id": 35, "id_piscina": 7, "carril": 2 },
+    { "id": 36, "id_piscina": 7, "carril": 3 },
+    { "id": 37, "id_piscina": 7, "carril": 4 },
+    { "id": 38, "id_piscina": 7, "carril": 5 },
+    { "id": 39, "id_piscina": 7, "carril": 6 },
+    { "id": 40, "id_piscina": 7, "carril": 7 },
+    { "id": 41, "id_piscina": 7, "carril": 8 },
+    { "id": 42, "id_piscina": 7, "carril": 9 },
+    { "id": 43, "id_piscina": 7, "carril": 10 },
+    { "id": 44, "id_piscina": 8, "carril": 1 },
+    { "id": 45, "id_piscina": 9, "carril": 1 },
+    { "id": 46, "id_piscina": 9, "carril": 2 },
+    { "id": 47, "id_piscina": 10, "carril": 1 },
+    { "id": 48, "id_piscina": 10, "carril": 2 },
+    { "id": 49, "id_piscina": 10, "carril": 3 },
+    { "id": 50, "id_piscina": 10, "carril": 4 },
+    { "id": 51, "id_piscina": 10, "carril": 5 },
+    { "id": 52, "id_piscina": 10, "carril": 6 },
+    { "id": 53, "id_piscina": 10, "carril": 7 },
+    { "id": 54, "id_piscina": 10, "carril": 8 },
+    { "id": 55, "id_piscina": 10, "carril": 9 },
+    { "id": 56, "id_piscina": 10, "carril": 10 },
+    { "id": 57, "id_piscina": 10, "carril": 11 },
+    { "id": 58, "id_piscina": 10, "carril": 12 },
+    { "id": 59, "id_piscina": 11, "carril": 1 },
+    { "id": 60, "id_piscina": 11, "carril": 2 },
+    { "id": 61, "id_piscina": 11, "carril": 3 },
+    { "id": 62, "id_piscina": 11, "carril": 4 },
+    { "id": 63, "id_piscina": 11, "carril": 5 },
+    { "id": 64, "id_piscina": 11, "carril": 6 },
+    { "id": 65, "id_piscina": 11, "carril": 7 },
+    { "id": 66, "id_piscina": 11, "carril": 8 },
+    { "id": 67, "id_piscina": 11, "carril": 9 },
+    { "id": 68, "id_piscina": 11, "carril": 10 },
+    { "id": 69, "id_piscina": 12, "carril": 1 },
+    { "id": 70, "id_piscina": 12, "carril": 2 },
+    { "id": 71, "id_piscina": 12, "carril": 3 },
+    { "id": 72, "id_piscina": 12, "carril": 4 },
+    { "id": 73, "id_piscina": 12, "carril": 5 },
+    { "id": 74, "id_piscina": 12, "carril": 6 },
+    { "id": 75, "id_piscina": 12, "carril": 7 },
+    { "id": 76, "id_piscina": 12, "carril": 8 },
+    { "id": 77, "id_piscina": 12, "carril": 9 },
+    { "id": 78, "id_piscina": 12, "carril": 10 }
   ],
-  "horarios": [
-    {
-      "id": 1,
-      "dia": "Lunes",
-      "horas": [
-        "5:00",
-        "6:00",
-        "7:00",
-        "8:00",
-        "9:00",
-        "10:00",
-        "11:00",
-        "12:00",
-        "13:00",
-        "14:00",
-        "15:00",
-        "16:00",
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00"
-      ]
-    },
-    {
-      "id": 2,
-      "dia": "Martes",
-      "horas": [
-        "5:00",
-        "6:00",
-        "7:00",
-        "8:00",
-        "9:00",
-        "10:00",
-        "11:00",
-        "12:00",
-        "13:00",
-        "14:00",
-        "15:00",
-        "16:00",
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00"
-      ]
-    },
-    {
-      "id": 3,
-      "dia": "Miércoles",
-      "horas": [
-        "5:00",
-        "6:00",
-        "7:00",
-        "8:00",
-        "9:00",
-        "10:00",
-        "11:00",
-        "12:00",
-        "13:00",
-        "14:00",
-        "15:00",
-        "16:00",
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00"
-      ]
-    },
-    {
-        "id": 4,
-        "dia": "Jueves",
-        "horas": [
-          "5:00",
-          "6:00",
-          "7:00",
-          "8:00",
-          "9:00",
-          "10:00",
-          "11:00",
-          "12:00",
-          "13:00",
-          "14:00",
-          "15:00",
-          "16:00",
-          "17:00",
-          "18:00",
-          "19:00",
-          "20:00",
-          "21:00"
-        ]
-      },
-      {
-        "id": 5,
-        "dia": "Viernes",
-        "horas": [
-          "5:00",
-          "6:00",
-          "7:00",
-          "8:00",
-          "9:00",
-          "10:00",
-          "11:00",
-          "12:00",
-          "13:00",
-          "14:00",
-          "15:00",
-          "16:00",
-          "17:00",
-          "18:00",
-          "19:00",
-          "20:00",
-          "21:00"
-        ]
-      },
-      {
-        "id": 6,
-        "dia": "Sábado",
-        "horas": [
-          "5:00",
-          "6:00",
-          "7:00",
-          "8:00",
-          "9:00",
-          "10:00",
-          "11:00",
-          "12:00",
-          "13:00",
-          "14:00",
-          "15:00",
-          "16:00",
-          "17:00",
-          "18:00",
-          "19:00",
-          "20:00",
-          "21:00"
-        ]
-      },
-      {
-        "id": 7,
-        "dia": "Domingo",
-        "horas": [
-          "5:00",
-          "6:00",
-          "7:00",
-          "8:00",
-          "9:00",
-          "10:00",
-          "11:00",
-          "12:00",
-          "13:00",
-          "14:00",
-          "15:00",
-          "16:00",
-          "17:00",
-          "18:00",
-          "19:00",
-          "20:00",
-          "21:00"
-        ]
-      }
+  "horas_inicio": [
+    { "id": 1, "hora": "5:00" },
+    { "id": 2, "hora": "6:00" },
+    { "id": 3, "hora": "7:00" },
+    { "id": 4, "hora": "8:00" },
+    { "id": 5, "hora": "9:00" },
+    { "id": 6, "hora": "10:00" },
+    { "id": 7, "hora": "11:00" },
+    { "id": 8, "hora": "12:00" },
+    { "id": 9, "hora": "13:00" },
+    { "id": 10, "hora": "14:00" },
+    { "id": 11, "hora": "15:00" },
+    { "id": 12, "hora": "16:00" },
+    { "id": 13, "hora": "17:00" },
+    { "id": 14, "hora": "18:00" },
+    { "id": 15, "hora": "19:00" },
+    { "id": 16, "hora": "20:00" },
+    { "id": 17, "hora": "21:00" }
   ],
-  "reservas": [
-    {
-      "id": 1,
-      "piscinas_id": 1,
-      "carril_index": 0,
-      "organismo_id": 1,
-      "dia": "Lunes",
-      "hora": "10:00"
-    },
-    {
-      "id": 2,
-      "piscinas_id": 1,
-      "carril_index": 0,
-      "organismo_id": 1,
-      "dia": "Lunes",
-      "hora": "09:00"
-    }
+  "horas_fin": [
+    { "id": 1, "hora": "6:00" },
+    { "id": 2, "hora": "7:00" },
+    { "id": 3, "hora": "8:00" },
+    { "id": 4, "hora": "9:00" },
+    { "id": 5, "hora": "10:00" },
+    { "id": 6, "hora": "11:00" },
+    { "id": 7, "hora": "12:00" },
+    { "id": 8, "hora": "13:00" },
+    { "id": 9, "hora": "14:00" },
+    { "id": 10, "hora": "15:00" },
+    { "id": 11, "hora": "16:00" },
+    { "id": 12, "hora": "17:00" },
+    { "id": 13, "hora": "18:00" },
+    { "id": 14, "hora": "19:00" },
+    { "id": 15, "hora": "20:00" },
+    { "id": 16, "hora": "21:00" },
+    { "id": 17, "hora": "22:00" }
   ],
-  "usuarios": [
-    {
-      "id": 1,
-      "nombre": "Juan Pérez",
-      "email": "juan.perez@example.com",
-      "password": "hashedpassword123",
-      "privilegios": ["admin"]
-    },
-    {
-      "id": 2,
-      "nombre": "Ana Gómez",
-      "email": "ana.gomez@example.com",
-      "password": "hashedpassword456",
-      "privilegios": ["usuario"]
-    }
+  "organismos": [
+    { "id": 1, "nombre": "sin asignar", "sigla": "sin asignar", "programa": "", "modalidad": "", "formador": "" }
+  ],
+  "uso_carriles": [
+    { "id": 1, "id_carril": 1, "id_hora_inicio": 1, "id_hora_fin": 1, "id_organismo": 1 }    
   ]
 }
