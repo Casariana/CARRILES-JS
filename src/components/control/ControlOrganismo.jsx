@@ -1,15 +1,21 @@
+import { useState, useEffect } from "react";
 import ControlFormOrganismos from "./ControlFormOrganismos";
 
 export default function ControlOrganismo() {
-  const datosOrganismos = [
-    {
-      organismo: "liga antioqueña de actividades subacuáticas",
-      sigla: "liga antioqueña de actividades subacuáticas",
-      programa: "liga antioqueña de actividades subacuáticas",
-      modalidad: "liga antioqueña de actividades subacuáticas",
-      formador: "liga antioqueña de actividades subacuáticas",
-    },
-  ];
+  const [datosOrganismos, setDatosOrganismos] = useState([]);
+
+  useEffect(() => {
+    const obtenerDatos = async () => {
+      try {
+        const response = await fetch("/public/data/db.json");
+        const data = await response.json();
+        setDatosOrganismos(data.organismos);
+      } catch (error) {
+        console.log("Error al cargar el json", error);
+      }
+    };
+    obtenerDatos();
+  }, []);
 
   return (
     <>
@@ -42,11 +48,21 @@ export default function ControlOrganismo() {
             <tbody>
               {datosOrganismos.map((dato, index) => (
                 <tr key={index} className="bg-teal-100 rounded-lg">
-                  <td className="p-4 uppercase max-w-60 select-none">{dato.organismo}</td>
-                  <td className="p-4 uppercase max-w-60 select-none">{dato.sigla}</td>
-                  <td className="p-4 uppercase max-w-60 select-none">{dato.programa}</td>
-                  <td className="p-4 uppercase max-w-60 select-none">{dato.modalidad}</td>
-                  <td className="p-4 uppercase max-w-60 select-none">{dato.formador}</td>
+                  <td className="p-4 uppercase max-w-60 select-none">
+                    {dato.nombre}
+                  </td>
+                  <td className="p-4 uppercase max-w-60 select-none">
+                    {dato.sigla}
+                  </td>
+                  <td className="p-4 uppercase max-w-60 select-none">
+                    {dato.programa}
+                  </td>
+                  <td className="p-4 uppercase max-w-60 select-none">
+                    {dato.modalidad}
+                  </td>
+                  <td className="p-4 uppercase max-w-60 select-none">
+                    {dato.formador}
+                  </td>
                   <td className="p-4 flex">
                     <img
                       className="w-12 h-12"

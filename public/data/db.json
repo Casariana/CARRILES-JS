@@ -93,7 +93,16 @@
     { "id": 77, "id_piscina": 12, "carril": 9 },
     { "id": 78, "id_piscina": 12, "carril": 10 }
   ],
-  "horas_inicio": [
+  "diaSem": [
+    { "id": 1, "dia": "Lunes" },
+    { "id": 2, "dia": "Martes" },
+    { "id": 3, "dia": "Miércoles" },
+    { "id": 4, "dia": "Jueves" },
+    { "id": 5, "dia": "Viernes" },
+    { "id": 6, "dia": "Sábado" },
+    { "id": 7, "dia": "Domingo" }    
+  ],
+  "hora_inicio": [
     { "id": 1, "hora": "5:00" },
     { "id": 2, "hora": "6:00" },
     { "id": 3, "hora": "7:00" },
@@ -135,6 +144,6 @@
     { "id": 1, "nombre": "sin asignar", "sigla": "sin asignar", "programa": "", "modalidad": "", "formador": "" }
   ],
   "uso_carriles": [
-    { "id": 1, "id_carril": 1, "id_hora_inicio": 1, "id_hora_fin": 1, "id_organismo": 1 }    
+    { "id": 1, "id_carril": 1, "id_diaSem": 1, "id_hora_inicio": 1, "id_hora_fin": 1, "id_organismo": 1 }    
   ]
 }
