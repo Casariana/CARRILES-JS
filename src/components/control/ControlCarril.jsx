@@ -1,9 +1,11 @@
+import Filtros from "../main/Filtros"
 
 
-function ControlCarril() {
+export default function ControlCarril() {
   return (
-    <div>ControlCarril</div>
+    <>
+     <Filtros />
+     
+    </>
   )
 }
-
-export default ControlCarril
