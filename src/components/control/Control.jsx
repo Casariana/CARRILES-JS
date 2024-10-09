@@ -4,7 +4,7 @@ import Header from "../Header";
 
 export default function Control() {
   return (
-    <div>
+    <div className="root">
       <Header />
       <BtnControl />
       <Footer />

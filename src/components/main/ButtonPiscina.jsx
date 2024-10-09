@@ -1,18 +1,41 @@
 import { useEffect, useState } from "react";
-function ButtonPiscina() {
+
+export default function ButtonPiscina() {
   const [selectedPiscina, setSelectedPiscina] = useState("");
   const [piscina, setPiscina] = useState([]);
 
   useEffect(() => {
     const obtenerPiscina = async () => {
+      const remoteUrl = "http://xxxx"; // Reemplaza 'xxxx' con la URL de tu backend
+      const localUrl = "/public/data/db.json"; // Ruta al JSON local
+
       try {
-        const response = await fetch("/public/data/db.json");
-        const data = await response.json();
-        setPiscina(data.piscinas);
+        // Intentar obtener datos del backend
+        const remoteResponse = await fetch(remoteUrl);
+        if (remoteResponse.ok) {
+          const data = await remoteResponse.json();
+          setPiscina(data.piscinas);
+        } else {
+          throw new Error('No se pudo obtener el JSON del backend');
+        }
       } catch (error) {
-        console.log("Error al obtener datos", error);
+        console.log("Error al obtener datos del backend, usando datos locales:", error);
+        
+        // Si falla, intentar obtener los datos del JSON local
+        try {
+          const localResponse = await fetch(localUrl);
+          if (localResponse.ok) {
+            const data = await localResponse.json();
+            setPiscina(data.piscinas);
+          } else {
+            throw new Error('No se pudo obtener el JSON local');
+          }
+        } catch (error) {
+          console.log("Error al obtener datos del JSON local:", error);
+        }
       }
     };
+
     obtenerPiscina();
   }, []);
 
@@ -37,10 +60,10 @@ function ButtonPiscina() {
             key={index}
           >
             <input
-              className=" appearance-none"
+              className="appearance-none"
               type="radio"
               value={piscina.piscina}
-              checked={selectedPiscina === piscina}
+              checked={selectedPiscina === piscina.piscina}
               onChange={handleChange}
             />
             {piscina.piscina}
@@ -50,5 +73,3 @@ function ButtonPiscina() {
     </>
   );
 }
-
-export default ButtonPiscina;

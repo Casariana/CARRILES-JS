@@ -6,11 +6,11 @@ import BodyOrganismos from "./BodyOrganismos";
 export default function Organismos() {
   
   return (
-    <>
+    <div className='root'>
       <Header />
       <HeadOrganismos />
       <BodyOrganismos />
       <Footer />
-    </>
+    </div>
   );
 }

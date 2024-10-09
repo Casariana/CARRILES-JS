@@ -3,24 +3,47 @@ import { useEffect, useState } from "react";
 export default function ButtonDiaSem() {
   const [selectedDia, setSelectedDia] = useState("");
   const [diaSem, setDiaSem] = useState([]);
-  
-  useEffect(()=> {
+
+  useEffect(() => {
     const obtenerDia = async () => {
+      const remoteUrl = "http://xxxx"; // Reemplaza 'xxxx' con la URL de tu backend
+      const localUrl = "/public/data/db.json"; // Ruta al JSON local
+
       try {
-        const response = await fetch("/public/data/db.json");
-        const data = await response.json();
-        setDiaSem(data.diaSem);
+        // Intentar obtener datos del backend
+        const remoteResponse = await fetch(remoteUrl);
+        if (remoteResponse.ok) {
+          const remoteData = await remoteResponse.json();
+          setDiaSem(remoteData.diaSem);
+        } else {
+          throw new Error('No se pudo obtener el JSON del backend');
+        }
       } catch (error) {
-        console.log("Error al obtener datos", error)
+        console.log("Error al obtener datos del backend, usando datos locales:", error);
+        
+        // Si falla, intentar obtener los datos del JSON local
+        try {
+          const localResponse = await fetch(localUrl);
+          if (localResponse.ok) {
+            const localData = await localResponse.json();
+            setDiaSem(localData.diaSem);
+          } else {
+            throw new Error('No se pudo obtener el JSON local');
+          }
+        } catch (error) {
+          console.log("Error al obtener datos del JSON local:", error);
+        }
       }
     };
+
     obtenerDia();
   }, []);
+
   const handleChange = (event) => {
-    setSelectedDia((event.target.value));
+    setSelectedDia(event.target.value);
     console.log('Opción seleccionada:', event.target.value);
   };
-  
+
   return (
     <>
       <h2 className="mb-4 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 md:text-5xl lg:text-4xl select-none">
@@ -38,7 +61,7 @@ export default function ButtonDiaSem() {
               className="hidden"
               type="radio"
               value={dia.dia}
-              checked={selectedDia === dia}
+              checked={selectedDia === dia.dia}
               onChange={handleChange}
             />
             {dia.dia}

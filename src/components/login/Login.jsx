@@ -2,7 +2,7 @@
 
 function Login() {
   return (
-    <div className="flex justify-center mt-28">
+    <div className="root flex justify-center mt-28">
       <div className="w-full max-w-sm p-4 bg-[url('public/complejo.svg')] bg-cover  rounded-lg  sm:p-6 md:p-8">
         <form className="space-y-6" action="#">
           <h5 className="text-2xl font-medium text-black ">
