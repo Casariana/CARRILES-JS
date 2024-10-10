@@ -20,7 +20,7 @@ function Filtros() {
 
 export default Filtros;
 
-// import ButtonSelector from "./ButtonSelector"; // Asegúrate de que la ruta sea correcta
+// import ButtonSelector from "./ButtonSelector"; 
 
 // const Filtros = () => {
 //   return (

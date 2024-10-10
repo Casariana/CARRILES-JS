@@ -1,5 +1,4 @@
-// ButtonSelector.js
-import { useAppContext } from '../../context/ContextButon'; // Asegúrate de que la ruta sea correcta
+import { useAppContext } from '../../context/ContextButon'; 
 
 const ButtonSelector = ({ title, dataKey }) => {
   const { diaSem, horarioss, piscina, selectedDia, setSelectedDia, selectedHora, setSelectedHora, selectedPiscina, setSelectedPiscina } = useAppContext();
@@ -46,4 +45,4 @@ const ButtonSelector = ({ title, dataKey }) => {
   );
 };
 
-export default ButtonSelector; // Exportar el componente
+export default ButtonSelector; 

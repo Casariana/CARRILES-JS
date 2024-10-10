@@ -6,11 +6,11 @@ export default function ButtonDiaSem() {
 
   useEffect(() => {
     const obtenerDia = async () => {
-      const remoteUrl = "http://xxxx"; // Reemplaza 'xxxx' con la URL de tu backend
-      const localUrl = "/public/data/db.json"; // Ruta al JSON local
+      const remoteUrl = "http://xxxx"; 
+      const localUrl = "/public/data/db.json"; 
 
       try {
-        // Intentar obtener datos del backend
+        //acá intercambiadas localUrl 
         const remoteResponse = await fetch(localUrl);
         if (remoteResponse.ok) {
           const remoteData = await remoteResponse.json();
@@ -21,7 +21,7 @@ export default function ButtonDiaSem() {
       } catch (error) {
         console.log("Error al obtener datos del backend, usando datos locales:", error);
         
-        // Si falla, intentar obtener los datos del JSON local
+        //Acá intercambiada remoteUrl
         try {
           const localResponse = await fetch(remoteUrl);
           if (localResponse.ok) {

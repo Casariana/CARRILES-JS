@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-// Crear el contexto
+
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
@@ -12,7 +12,7 @@ export const AppProvider = ({ children }) => {
   const [selectedHora, setSelectedHora] = useState("");
   const [selectedPiscina, setSelectedPiscina] = useState("");
 
-  // Lógica para obtener los datos
+  
   const fetchData = async (url, setData, dataKey) => {
     const remoteUrl = url; // Reemplaza con la URL de tu backend
     const localUrl = "/public/data/db.json"; // Ruta al JSON local

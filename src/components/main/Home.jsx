@@ -12,12 +12,12 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simular una carga de datos
+    
     const fetchData = async () => {
       setTimeout(() => {
         setData({ message: '¡Datos cargados!' });
         setLoading(false);
-      }, 100); // Simula un retraso de 3 segundos
+      }, 3000); 
     };
 
     fetchData();
